@@ -48,7 +48,6 @@ module OpenTracing
     # @param timestamp [Time] time of the log
     # @param fields [Hash] Additional information to log
     def log(event: nil, timestamp: Time.now, **fields)
-      warn 'Span#log is deprecated.  Please use Span#log_kv instead.'
       nil
     end
 
